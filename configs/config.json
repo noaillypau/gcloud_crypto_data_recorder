@@ -1,0 +1,7 @@
+{
+    "LOB_LIMIT":10,
+    "TRADES_LIMIT":100,
+    "SLEEP":0.5,
+    "path_bucket":"exchange/symbol/datestr.csv",
+    "name_bucket":"cryptohf1"
+}
