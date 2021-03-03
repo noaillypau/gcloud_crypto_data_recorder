@@ -12,8 +12,8 @@ except:
     os.system('pip install google-cloud-storage')
     from google.cloud import storage
 
-SEPARATOR = '_'
-TIME_TO_SLEEP = 5#60*60*4
+SEPARATOR = '__'
+TIME_TO_SLEEP = 60*60*4
 
 def date_to_datestr(date):
     return date.strftime('%Y%m%d')
