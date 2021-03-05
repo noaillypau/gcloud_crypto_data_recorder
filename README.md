@@ -47,3 +47,11 @@ or
 ```ssh
 python3 recorder/main_record_exchange.py EXCHANGE BATCH --debug
 ```
+
+# Create new config/exchanges.json
+
+Use notebook explorer part `II. generate config`
+
+# Print list of VM commands for faster deploy
+
+Use notebook explorer part `III. generate instances commands`
