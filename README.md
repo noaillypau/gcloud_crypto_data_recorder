@@ -28,7 +28,7 @@ cd gcloud_crypto_data_recorder
 python3 uploader/main_uploader.py
 ```
 
-## Run updater
+## Run recorder
 
 ```ssh
 tmux
