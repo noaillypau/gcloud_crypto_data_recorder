@@ -30,7 +30,7 @@ def filename_to_bucket(source_file_name):
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'configs/gcloud_client.json'
     # exctract output path 
     splited_filename = source_file_name.split(SEPARATOR)
-    exchange, symbol, datestr = splited_filename[0], splited_filename[1], splited_filename[2]
+    exchange, symbol, datestr = splited_filename[0], splited_filename[1], splited_filename[2][:-4]
     dest_path = config['path_bucket'].replace('exchange',exchange).replace('symbol',symbol).replace('datestr',datestr)
     # exctract bucket name
     bucket_name = config['name_bucket']
@@ -67,7 +67,6 @@ def loop():
             print('')
         else:
             time.sleep(TIME_TO_SLEEP)
-        break
 
 loop()
 
